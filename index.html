@@ -14,6 +14,28 @@
 </head>
 
 <body>
+    <div class="overlay_menu"  onclick="togglePopup()">
+        <div>
+            <div class="logo">
+                <img src="assets/empty.png" alt="">
+            </div>
+            <ul>
+                <a href="#1">
+                    <li>الصفحة الرئيسية</li>
+                </a>
+                <a href="#2">
+                    <li>التصنيفات</li>
+                </a>
+                <a href="#3">
+                    <li>من نحن</li>
+                </a>
+                <a href="#4">
+                    <li>اتصل بنا</li>
+                </a>
+                
+            </ul>
+        </div>
+       </div>
     <header class=" header ">
         <div class="wrap">
             <div class="container df jc-sb ai-c">
@@ -22,19 +44,30 @@
                 </div>
                 <div class="list_header">
                     <ul class="df jc-sb ai-c g1">
-                        <li>الصفحة الرئيسية</li>
-                        <li> التصنيفات </li>
-                        <li>من نحن</li>
-                        <li>اتصل بنا </li>
+                        <a href="#1">
+                            <li>الصفحة الرئيسية</li>
+                        </a>
+                        <a href="#2">
+                            <li>التصنيفات</li>
+                        </a>
+                        <a href="#3">
+                            <li>من نحن</li>
+                        </a>
+                        <a href="#4">
+                            <li>اتصل بنا</li>
+                        </a>
+                        
                     </ul>
                 </div>
-                <div class="list_phone">
-                    <img src="assets/icons8-hamburger-menu-50.png" alt="">
+                <div class="list_phone"  onclick="togglePopup()">
+                    <img src="assets/icons8-hamburger-menu-50.png" alt="">                    
                 </div>
+                
+               
             </div>
         </div>
     </header>
-    <section >
+    <section id="1" class="first">
         <div class="wrap">
             <div class="hero">
                 <div class="img_container">    
@@ -55,7 +88,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="2">
         <div class="wrap">
             <div class="category">
                 <div class="category_title">
@@ -82,7 +115,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="3">
         <div class="wrap">
             <div class="vedio_container">
                 <video  src="assets/VID-20231212-WA0007.mp4" autoplay controls loop></video>
@@ -144,7 +177,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="4">
         <div class="wrap">
             <div class="qr_code df jc-sb">
               <div class="instagram">
@@ -201,6 +234,7 @@
 
       
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
