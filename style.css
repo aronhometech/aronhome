@@ -246,7 +246,7 @@
   }
   /*qr code */
   .qr_code{
-    margin-bottom: 2rem;
+    margin-block: 2rem;
   }
   .instagram{
     box-shadow: 1px 1px 10px grey;
@@ -281,4 +281,37 @@
 footer ul li {
   cursor: pointer;
   margin: .8rem;
+}
+@media (max-width: 768px){
+  .list_header{
+    display: none;
+  }
+  .txt_container:not(.disc){
+    padding: 8px;
+    font-size: 1rem;
+    top: 20%;
+    min-width: auto;
+  }
+  .product_cards {
+  
+    grid-template-columns: repeat(2,1fr);
+    gap: .8rem;
+    padding: 0.3rem;
+}
+.qr_code h3 {
+  font-size: .8rem !important;
+}
+.qr_code{
+  gap: 1rem;
+}
+footer{
+  flex-direction: column;
+}
+.list_phone{
+  display: block !important;
+}
+
+}
+.list_phone{
+  display: none;
 }
