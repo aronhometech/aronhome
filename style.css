@@ -81,14 +81,7 @@ html{
   right: 0;
   }
   /*annoncment bar */
- /*  .annoncment_bar{
-    background: white;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    font-weight: 500;
-    padding-block: .3rem;
-  } */
+
   .announcement-bar {
     overflow: hidden;
     
@@ -108,6 +101,7 @@ html{
     font-weight: 500;
     padding-block: .3rem;
     Overflow-wrap: break-word;
+    width: 120%;
   }
   
   @-moz-keyframes scroll {
