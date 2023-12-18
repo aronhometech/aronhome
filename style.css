@@ -373,9 +373,7 @@ footer ul li {
     gap: .8rem;
     padding: 0.3rem;
 }
-.qr_code h3 {
-  font-size: .8rem !important;
-}
+
 .qr_code{
   gap: 1rem;
 }
