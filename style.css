@@ -77,11 +77,65 @@ html{
   position: fixed !important;
   z-index: 10;
   top: 0;
- left: 0;
- right: 0;
+  left: 0;
+  right: 0;
+  }
+  /*annoncment bar */
+ /*  .annoncment_bar{
+    background: white;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-block: .3rem;
+  } */
+  .announcement-bar {
+    overflow: hidden;
+    
+  }
+  
+  .sqs-announcement-bar-text {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll 15s linear infinite;
+    -webkit-animation: scroll 15s linear infinite;
+    animation: scroll 15s linear infinite;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-block: .3rem;
+    Overflow-wrap: break-word;
+  }
+  
+  @-moz-keyframes scroll {
+    from { -moz-transform: translateX(-100%); }
+    to { -moz-transform: translateX(100%); }
+  }
+  
+  @-webkit-keyframes scroll {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(100%); }
+  }
+  
+  @keyframes scroll {
+    from {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    to {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }
+  
  
 
-  }
+  /**/
   .logo img{
     width: 100%;
   
@@ -267,9 +321,9 @@ html{
   }
   /*qr code */
   .qr_code{
-    margin-block: 2rem;
+   /*  margin-block: 2rem; */
   }
-  .instagram{
+  .qr_code_element{
     box-shadow: 1px 1px 10px grey;
     padding: 1rem;
     font-size: large;
